@@ -24,10 +24,10 @@
     "require-dev": {
         "ext-redis": "*",
         "ext-pdo_mysql": "*",
-        "phpunit/phpunit": "^10.1",
+        "phpunit/phpunit": "^9.5.10",
         "mockery/mockery": "^1.4.4",
         "orchestra/testbench": "^8.0",
-        "illuminated/testing-tools": "^10.0",
+        "illuminated/testing-tools": "^9.0",
         "predis/predis": "^2.0"
     },
     "autoload": {
