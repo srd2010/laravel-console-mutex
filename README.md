@@ -1,22 +1,17 @@
 ![Mutex for Laravel Console Commands](art/1380x575-optimized.jpg)
 
 # Laravel Console Mutex
+### This is a fork from the original Repository to support Laravel v10.x
 
-[<img src="https://user-images.githubusercontent.com/1286821/181085373-12eee197-187a-4438-90fe-571ac6d68900.png" alt="Buy me a coffee" width="200" />](https://buymeacoffee.com/dmitry.ivanov)
+---
 
-[![StyleCI](https://github.styleci.io/repos/59570052/shield?branch=master&style=flat)](https://github.styleci.io/repos/59570052?branch=master)
-[![Build Status](https://img.shields.io/github/workflow/status/dmitry-ivanov/laravel-console-mutex/tests/master)](https://github.com/dmitry-ivanov/laravel-console-mutex/actions?query=workflow%3Atests+branch%3Amaster)
-[![Coverage Status](https://img.shields.io/codecov/c/github/dmitry-ivanov/laravel-console-mutex/master)](https://app.codecov.io/gh/dmitry-ivanov/laravel-console-mutex/branch/master)
-
-![Packagist Version](https://img.shields.io/packagist/v/illuminated/console-mutex)
-![Packagist Stars](https://img.shields.io/packagist/stars/illuminated/console-mutex)
-![Packagist Downloads](https://img.shields.io/packagist/dt/illuminated/console-mutex)
-![Packagist License](https://img.shields.io/packagist/l/illuminated/console-mutex)
+[<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" />](https://www.buymeacoffee.com/frank.stuhec)
 
 Mutex for Laravel Console Commands.
 
 | Laravel | Console Mutex                                                            |
 |---------|--------------------------------------------------------------------------|
+| 10.x    | [10.x](https://github.com/srd2010/laravel-console-mutex/tree/10.x)       |
 | 9.x     | [9.x](https://github.com/dmitry-ivanov/laravel-console-mutex/tree/9.x)   |
 | 8.x     | [8.x](https://github.com/dmitry-ivanov/laravel-console-mutex/tree/8.x)   |
 | 7.x     | [7.x](https://github.com/dmitry-ivanov/laravel-console-mutex/tree/7.x)   |
@@ -277,7 +272,7 @@ class ExampleCommand extends Command
 }
 ```
 
-## Sponsors
+## Original Sponsors
 
 [![Laravel Idea](art/sponsor-laravel-idea.png)](https://laravel-idea.com)<br>
 [![Material Theme UI Plugin](art/sponsor-material-theme.png)](https://material-theme.com)<br>
@@ -285,6 +280,3 @@ class ExampleCommand extends Command
 ## License
 
 Laravel Console Mutex is open-sourced software licensed under the [MIT license](LICENSE.md).
-
-[<img src="https://user-images.githubusercontent.com/1286821/43086829-ff7c006e-8ea6-11e8-8b03-ecf97ca95b2e.png" alt="Support on Patreon" width="125" />](https://patreon.com/dmitryivanov)&nbsp;
-[<img src="https://user-images.githubusercontent.com/1286821/181085373-12eee197-187a-4438-90fe-571ac6d68900.png" alt="Buy me a coffee" width="200" />](https://buymeacoffee.com/dmitry.ivanov)&nbsp;
