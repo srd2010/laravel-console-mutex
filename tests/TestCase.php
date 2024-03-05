@@ -17,6 +17,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
      * Resolve application Console Kernel implementation.
      *
      * @param \Illuminate\Foundation\Application $app
+     *
      * @return void
      */
     protected function resolveApplicationConsoleKernel($app)

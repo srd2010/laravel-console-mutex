@@ -13,19 +13,19 @@ class WithoutOverlappingTraitTest extends TestCase
     /** @test */
     public function it_adds_mutex_strategy_which_is_file_by_default()
     {
-        $this->assertEquals('file', (new GenericCommand)->getMutexStrategy());
+        $this->assertEquals('file', (new GenericCommand())->getMutexStrategy());
     }
 
     /** @test */
     public function mutex_strategy_can_be_overloaded_by_protected_field()
     {
-        $this->assertEquals('mysql', (new MysqlStrategyCommand)->getMutexStrategy());
+        $this->assertEquals('mysql', (new MysqlStrategyCommand())->getMutexStrategy());
     }
 
     /** @test */
     public function mutex_strategy_can_be_set_by_the_public_method()
     {
-        $command = new GenericCommand;
+        $command = new GenericCommand();
         $command->setMutexStrategy('redis');
 
         $this->assertEquals('redis', $command->getMutexStrategy());
@@ -34,25 +34,25 @@ class WithoutOverlappingTraitTest extends TestCase
     /** @test */
     public function it_adds_mutex_timeout_which_is_zero_by_default()
     {
-        $this->assertEquals(0, (new GenericCommand)->getMutexTimeout());
+        $this->assertEquals(0, (new GenericCommand())->getMutexTimeout());
     }
 
     /** @test */
     public function mutex_timeout_can_be_overloaded_by_protected_field()
     {
-        $this->assertEquals(3000, (new TimeoutCommand)->getMutexTimeout());
+        $this->assertEquals(3000, (new TimeoutCommand())->getMutexTimeout());
     }
 
     /** @test */
     public function mutex_timeout_can_be_set_to_null_by_protected_field()
     {
-        $this->assertNull((new NullTimeoutCommand)->getMutexTimeout());
+        $this->assertNull((new NullTimeoutCommand())->getMutexTimeout());
     }
 
     /** @test */
     public function mutex_timeout_can_be_set_by_the_public_method()
     {
-        $command = new GenericCommand;
+        $command = new GenericCommand();
         $command->setMutexTimeout(5000);
 
         $this->assertEquals(5000, $command->getMutexTimeout());
@@ -61,7 +61,7 @@ class WithoutOverlappingTraitTest extends TestCase
     /** @test */
     public function mutex_timeout_can_be_set_to_null_by_the_public_method()
     {
-        $command = new GenericCommand;
+        $command = new GenericCommand();
         $command->setMutexTimeout(null);
 
         $this->assertNull($command->getMutexTimeout());
@@ -81,7 +81,9 @@ class WithoutOverlappingTraitTest extends TestCase
 
     /**
      * @test
+     *
      * @runInSeparateProcess
+     *
      * @preserveGlobalState disabled
      */
     public function it_allows_to_run_command_if_there_is_no_other_running_instances()
@@ -95,7 +97,9 @@ class WithoutOverlappingTraitTest extends TestCase
 
     /**
      * @test
+     *
      * @runInSeparateProcess
+     *
      * @preserveGlobalState disabled
      */
     public function it_blocks_if_trying_to_run_another_instance_of_the_command()
@@ -111,7 +115,9 @@ class WithoutOverlappingTraitTest extends TestCase
 
     /**
      * @test
+     *
      * @runInSeparateProcess
+     *
      * @preserveGlobalState disabled
      */
     public function it_is_releasing_the_lock_after_command_execution()
@@ -120,7 +126,7 @@ class WithoutOverlappingTraitTest extends TestCase
         $mutex = mock('overload:Illuminated\Console\Mutex');
         $mutex->expects('releaseLock');
 
-        $command = new GenericCommand;
+        $command = new GenericCommand();
         $command->releaseMutexLock($mutex);
     }
 }
