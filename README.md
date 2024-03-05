@@ -56,7 +56,7 @@ Mutex for Laravel Console Commands.
 1. Install the package via Composer:
 
     ```shell script
-    composer require illuminated/console-mutex
+    composer require srd2010/console-mutex
     ```
 
 2. Use `Illuminated\Console\WithoutOverlapping` trait:
