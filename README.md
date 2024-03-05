@@ -7,6 +7,16 @@
 
 [<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" />](https://www.buymeacoffee.com/frank.stuhec)
 
+[![StyleCI](https://github.styleci.io/repos/767163304/shield?branch=master)](https://github.styleci.io/repos/767163304?branch=master)
+[![Build Status](https://img.shields.io/github/workflow/status/srd2010/laravel-testing-tools/tests/master)](https://github.com/srd2010/laravel-console-mutex/actions?query=workflow%3Atests+branch%3Amaster)
+[![codecov](https://codecov.io/gh/srd2010/laravel-console-mutex/graph/badge.svg?token=R3I9U1P90E)](https://codecov.io/gh/srd2010/laravel-console-mutex)
+
+![Packagist Version](https://img.shields.io/packagist/v/srd2010/console-mutex)
+![Packagist Stars](https://img.shields.io/packagist/stars/srd2010/console-mutex)
+![Packagist Downloads](https://img.shields.io/packagist/dt/srd2010/console-mutex)
+![Packagist License](https://img.shields.io/packagist/l/srd2010/console-mutex)
+
+
 Mutex for Laravel Console Commands.
 
 | Laravel | Console Mutex                                                            |
